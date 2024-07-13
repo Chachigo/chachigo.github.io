@@ -6,7 +6,7 @@ description: "
   </p>
   <br/>
 "
-# email: dev_sharad@outlook.com
+email: chachigo@duck.com
 contact:
   # - title: linkedin
   #   url: https://www.linkedin.com/in/srsmaurya
@@ -16,5 +16,6 @@ contact:
     url: https://x.com/ChaChiigo
   # - title: dev
   #   url: https://dev.to/sharadcodes
-  # - title: email
-  #   url: mailto:dev_sharad@outlook.com
+  - title: email
+    url: mailto:chachigo@duck.com
+# 
