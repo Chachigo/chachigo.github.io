@@ -5,8 +5,6 @@ date: 2024-07-13 21:00:00
 categories: ["Dev"]
 ---
 
-# Steam Family Library Bot
-
 ## 📜Context
 Since March 2024, Steam has released its new family functionality, which allows multiple users to share their game library. Unlike the first family mode they released, the new one allows users to play shared games even when the game owner is connected.
 
@@ -45,7 +43,7 @@ Since it needs to notify all family members, a Discord bot seemed obvious to me.
 - ### 🤖 Setting Up the Discord Bot
   Setting up a Discord bot for the first time, I followed [this tutorial](https://www.docstring.fr/blog/creer-un-bot-discord-avec-python/). I connected it to my Discord server and made it send a simple message with a thank-you note and a Steam shop link, similar to this:
   
-  ![Discord Message Example](./img/DiscordMessage.png)
+  ![Discord Message Example](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/DiscordMessage.png)
 
 ## 🔑 Getting the Access Token
 This was the most challenging part of the project. I tried multiple Python libraries but found none with this functionality that could log in with my account each time due to my Steam Guard setup.
