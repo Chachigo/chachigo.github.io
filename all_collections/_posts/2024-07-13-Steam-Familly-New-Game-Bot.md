@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Steam Familly New Game Bot
-date: 2024-07-13 21:00
+date: 2024-07-13 21:00:00
 categories: [Dev]
 ---
 
