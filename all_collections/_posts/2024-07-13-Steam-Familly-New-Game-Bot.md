@@ -45,7 +45,7 @@ Since it needs to notify all family members, a Discord bot seemed obvious to me.
 - ### 🤖 Setting Up the Discord Bot
   Setting up a Discord bot for the first time, I followed [this tutorial](https://www.docstring.fr/blog/creer-un-bot-discord-avec-python/). I connected it to my Discord server and made it send a simple message with a thank-you note and a Steam shop link, similar to this:
   
-  ![Discord Message Example](https://picsum.photos/800/300)
+  ![Discord Message Example](img/DiscordMessage.png)
 
 ## 🔑 Getting the Access Token
 This was the most challenging part of the project. I tried multiple Python libraries but found none with this functionality that could log in with my account each time due to my Steam Guard setup.
