@@ -37,7 +37,7 @@ Since it needs to notify all family members, a Discord bot seemed obvious to me.
   else:
       print("No New Game")
   ```
-
+  
   Since the goal is to create a Discord bot, I also collect the SteamID of the game owner to thank them in the Discord notification.
 
 - ### 🤖 Setting Up the Discord Bot
@@ -84,9 +84,12 @@ I wanted to run the bot on my NAS server, which lacks a browser. Hence, I realiz
   ```
 
 ## ✨ Perfecting the Script
-To make troubleshooting easier, I added logs using a logger. It was my first time using it, and it's straightforward.
+To make troubleshooting easier, I added logs using a logger. It was my first time using it, and it's straightforward.  
+I also added the feature of being warned by a private message when the bot tries to retrieve games when the token has expired.
+Since in the request URL the **_include_free=false_** was not doing a great job to remove the free games, I found out that in the answer there was the field **_exclude_reason_** that equals 3 when the game is free, so I didn't add those games to the list.
 
 ## 🔧 Setting Up
 Since my NAS is a Synology, I needed to install Python and pip on it, which was a bit more challenging than expected but doable. Then, I installed all the required libraries. The final step was to create a scheduled task to start the Discord bot on startup.
 
 On my PC side, I also set up a scheduled task to run the script to obtain the token on startup, and voila!
+
