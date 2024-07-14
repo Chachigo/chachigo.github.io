@@ -85,7 +85,7 @@ I wanted to run the bot on my NAS server, which lacks a browser. Hence, I realiz
 
 ## ✨ Perfecting the Script
 To make troubleshooting easier, I added logs using a logger. It was my first time using it, and it's straightforward.  
-I also added the feature of being warned by a private message when the bot tries to retrieve games when the token has expired.
+I also added the feature of being warned by a private message when the bot tries to retrieve games when the token has expired.  
 Since in the request URL the **_include_free=false_** was not doing a great job to remove the free games, I found out that in the answer there was the field **_exclude_reason_** that equals 3 when the game is free, so I didn't add those games to the list.
 
 ## 🔧 Setting Up
