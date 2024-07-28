@@ -6,6 +6,9 @@ author:
   name: Chachigo
   email: chachigo@duck.com
 
+baseurl: "/chachigo.github.io "
+url: "https://chachigo.github.io"
+
 plugins:
   - jemoji
   - jekyll-seo-tag
