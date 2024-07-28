@@ -20,7 +20,8 @@ Now I've got a function that's called when the command is used.
 ## 👥 Adding the !coop command
 With the first functionality of the bot, I already know that an array with the owners' IDs is in the answer of the Steam API request to get the family library. So, to get only the games with enough copies is pretty straightforward.  
 Getting only the multiplayer games, on the other hand, is painful 🥲  
-After checking the result of the API, there is no field that I can use to know if the game is multiplayer or not. So, to get it, I'm forced to use another API request, the one to get the Steam store page data and get these tags: ![Steam store Tags](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/SteamTags.png?raw=true)  
+After checking the result of the API, there is no field that I can use to know if the game is multiplayer or not. So, to get it, I'm forced to use another API request, the one to get the Steam store page data and get these tags:   
+ ![Steam store Tags](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/SteamTags.png?raw=true)  
 Unfortunately, there are multiple tags that can be used, but after some trials, I found the ones I need, and it returns the correct game list. 
 
 The last issue that I encountered is that, for example, when I used the command ***!coop 4*** it returns Portal 2, which is a 2-player co-op game (after some research, it can be played by up to 33 players with mods). So, I wanted to only return the games that can be played by the entered number of players/copies. Unfortunately, I didn't find a way to get the max amount of players for games. The only solution I found was to use ChatGPT, but I quickly dismissed this option because it was a paid one, and even if it was pretty accurate for some indie games, the results were incorrect.
