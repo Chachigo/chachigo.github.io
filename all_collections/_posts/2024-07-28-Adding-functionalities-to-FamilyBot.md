@@ -2,7 +2,7 @@
 layout: post
 title: Adding New Functionalities To FamilyBot
 date: 2024-07-28 18:00:00
-categories: ["Dev","Python","Steam","Discord"]
+categories: ["Dev","Python","Steam","Discord","EpicGame"]
 ---
 
 ## 📜Context
