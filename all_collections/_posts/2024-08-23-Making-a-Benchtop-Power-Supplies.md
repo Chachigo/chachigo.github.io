@@ -24,10 +24,10 @@ To connect standard 4mm banana cables, I bought this [pack of 30 banana sockets 
 
 ## 🛠️ Building a Case
 Since I don't want to move a bunch of wires, I've designed a case with Fusion 360.
-![fusion360 render picture](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/psuCase.png)
+![fusion360 render picture](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/psuCase.png?raw=true)  
 The STL files if you want to print it yourself:
 - [Front](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/files/Front_Supply_Case.stl)
 - [Back](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/files/Back_Supply_Case.stl)
 
 ## 🏆 Finished Product
-![final product photo](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/psuPhoto.jpg)
+![final product photo](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/psuPhoto.jpg?raw=true)
