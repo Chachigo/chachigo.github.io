@@ -6,44 +6,44 @@ categories: ["Dev","Python","Steam","Discord"]
 ---
 
 ## 🎯 Goal
-the feature needs to display the game that are common to multiple family member's wishlists.  
-the information to be listed are as follows:
-- username of the users that have the game in common
-- game name
-- price
-    - price per user
-    - historical lowest price
-- tell if the game is on sale
+The feature needs to display the games that are common to multiple family members' wishlists.  
+The information to be listed is as follows:
+- Username of the users that have the game in common
+- Game name
+- Price
+    - Price per user
+    - Historical lowest price
+- Indicate if the game is on sale
 
 ## ⚙️Process
  - ### Getting the wishlists
-     To get the wish list unfortunately the Steam API documentation doesn't provide information to get the users wishlist since the extenssion [AugmentedSteam](https://augmentedsteam.com/) allows you to export a wishlist in JSON so it was obvious that it was possible using an http request so i've check in the debug information of the wishlist page and found i can use this: 
+     To retrieve the wishlists, unfortunately, the Steam API documentation doesn't provide information to get a user's wishlist. However, since the extension [AugmentedSteam](https://augmentedsteam.com/) allows you to export a wishlist in JSON, it was evident that it was possible using an HTTP request. I checked the debug information on the wishlist page and found that I could use this URL: 
     > https://store.steampowered.com/wishlist/profiles/{SteamID}/wishlistdata/  
     
-    the only small issue i encounter is that in order for this to work the game list of the users needs to be public.
+    The only minor issue I encountered is that for this to work, the user's game list needs to be public.
 
-    to get the common game beetween users i store the game id in a 2d python list
-    formated like this : 
+    To get the common games between users, I store the game ID in a 2D Python list
+    formatted like this: 
     > [[SteamAppId,[userId1,userId2]],  
     [SteamAppId2,[userId1,userId2]]]
     
  - ### Filter the "Global" Wishlist
-    Since i only whant the game listed by multiple users i check the size of the user list for each gameID then for the information to be useful, the game must have the **"Family Sharing"** option so, for each game i'll need to check if it's the case using th Steam Store API like i've done to get the Family library. 
+    Since I only want the games listed by multiple users, I check the size of the user list for each game ID. Then, for the information to be useful, the game must have the **"Family Sharing"** option. So, for each game, I'll need to check if it's the case using the Steam Store API like I've done to get the Family library. 
  
-    Something that i have a bit of difficulties to do is only get the buyable games since my brother and i have a lot of unrelease indie game in our wishlist to be notify when the game is released and the only thing i found to filter these kind of game is the number of steam review since it's not possible to review an unreleased game.
+    One difficulty I encountered is filtering for only buyable games since my brother and I have a lot of unreleased indie games on our wishlists to be notified when they are released. The only method I found to filter these types of games is by the number of Steam reviews since it's not possible to review an unreleased game.
  
  - ### Getting the Prices
-    while i check if the game have the family sharing option and if it buyable i gather the price and divide it by the number of users that wants (and round it) then to get the lowest price of the game on steam, since it's not available throug the Steam API i uses the [IsThereAnyDeal API](https://docs.isthereanydeal.com/) 
+    While I check if the game has the Family Sharing option and if it's buyable, I gather the price and divide it by the number of users who want it (and round it). To get the lowest price of the game on Steam, since it's not available through the Steam API, I use the [IsThereAnyDeal API](https://docs.isthereanydeal.com/).
     
-    here is how i use it :  
-        1. get the IsThereAnyDeal id from the steam appId using the **Game Lookup** method  
-        2. get the lowest price using the **Store Low** method which return the lowest price with the IsThereAnyDeal id, a country (to get the price in the local curensy) and a store ID wich is 61  
-        3. return the price as a string
+    Here is how I use it:  
+        1. Get the IsThereAnyDeal ID from the Steam App ID using the **Game Lookup** method  
+        2. Get the lowest price using the **Store Low** method, which returns the lowest price with the IsThereAnyDeal ID, a country (to get the price in the local currency), and a store ID, which is 61  
+        3. Return the price as a string
     
-    here is the python function i've made:
+    Here is the Python function I've created:
 
     ```python
-    def get_lowest_price(steamid:int,) -> str:
+    def get_lowest_price(steamid: int) -> str:
         url = "https://api.isthereanydeal.com/games/lookup/v1?key="+api_key+"&appid="+str(steamid)
         answer = requests.get(url).json()
     
@@ -55,9 +55,8 @@ the information to be listed are as follows:
         return str(answer[0]["lows"][0]["price"]["amount"])
     ```
  
-## ➕ Implementation of the feature to the bot
-i've made another function to format the data from the API to a sendable discord message, After this the implementation is pretty straight forward since i've used the event functionality previously i just create an event function to make the request and format it which will run once a day.  
-I don't like being notify randomly on discord so i've made the bot edit its message instead of sending a new one and the message look like this:
+## ➕ Implementation of the feature in the bot
+I've created another function to format the data from the API into a sendable Discord message. After this, the implementation is pretty straightforward. Since I've used the event functionality previously, I just created an event function to make the request and format it, which will run once a day.  
+I don't like being notified randomly on Discord, so I've made the bot edit its message instead of sending a new one, and the message looks like this:
 
-![discord Message](ttps://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/wishlistMessage.png?raw=true)
-    
+![discord Message](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/wishlistMessage.png?raw=true)
