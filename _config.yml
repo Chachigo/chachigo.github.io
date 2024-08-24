@@ -4,7 +4,7 @@ markdown: kramdown
 # for atom feed
 author:
   name: Chachigo
-  email: chachigo@duck.com
+  email: contact@chachigo.fr
 
 baseurl: "chachigo.github.io "
 url: "https://chachigo.github.io"
