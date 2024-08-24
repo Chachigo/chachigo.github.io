@@ -6,7 +6,7 @@ author:
   name: Chachigo
   email: chachigo@duck.com
 
-baseurl: "/chachigo.github.io "
+baseurl: "chachigo.github.io "
 url: "https://chachigo.github.io"
 
 plugins:
