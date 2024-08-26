@@ -17,9 +17,9 @@ For a long time now, I wanted a lab power supply to power prototypes and help me
 
 ## 🔍 Identify The Right Parts
 To meet the need to be inexpensive, I mostly search on Aliexpress for the different parts of the power supply.
-For the main part of the power supply, I'll use this [SK35H 35W buck boost converter](https://www.aliexpress.com/item/1005007004741793.html) (10.34€).
-To power it, I'll use this [USB C to DC5525](https://www.aliexpress.com/item/1005004744935148.html) (3.11€) that I already use to power my TS100 soldering iron. Since it uses the PowerDelivery protocol, it outputs a 12V 36W current which is perfect for the power supply.
-On the power supply side, I'll use these [DC5525 sockets](https://www.aliexpress.com/item/1005007211080553.html) (2.24€ for 10pcs).
+For the main part of the power supply, I'll use this [SK35H 35W buck boost converter](https://s.click.aliexpress.com/e/_DCptO7d) (10.34€).
+To power it, I'll use this [USB C to DC5525](https://s.click.aliexpress.com/e/_DCptO7d) (3.11€) that I already use to power my TS100 soldering iron. Since it uses the PowerDelivery protocol, it outputs a 12V 36W current which is perfect for the power supply.
+On the power supply side, I'll use these [DC5525 sockets](https://s.click.aliexpress.com/e/_DC40PsT) (2.24€ for 10pcs).
 To connect standard 4mm banana cables, I bought this [pack of 30 banana sockets on Amazon](https://amzn.to/3ANy3q4) (11€)(it can be useful in the future). On Amazon, I also bought these [regulation modules](https://amzn.to/4g0DeDh) (13€ for 10pcs) to power a 5V fan (its dimensions are 30x30x10mm) from the 12V of the power input (I used one from an old Raspberry Pi, so I don't have a link for it).
 
 ## 🛠️ Building a Case
