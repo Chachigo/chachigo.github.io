@@ -72,7 +72,7 @@ To handle cases where an @ tag isn't registered, I created the `!list_user` comm
 In response to my brother's comment about needing documentation for all commands, I developed a plugin that extracts specially formatted comments from the plugin Python file and generates a Discord message containing all commands per plugin.
 
 The plugin updates the bot's welcome message at startup. Here is the current help message:  
-![alt text](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/help_message.png)
+![alt text](https://github.com/Chachigo/chachigo.github.io/blob/main/all_collections/_posts/img/help_message.png?raw=true)
 
 ## Additional Comments
 I'll be publishing the code soon, but first, I'd like to thoroughly test it, address any issues, and create comprehensive documentation on installation and usage.
