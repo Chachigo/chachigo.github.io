@@ -43,4 +43,4 @@ Find the source code for [FamilyBot on GitHub](https://github.com/Chachigo/Famil
 
 ## ❓ What's Next?
 Here are some features I've thought about:
-- Notify users who have wishlist games in an upcoming Humble Bundle
+- Notify users who have wishlist games in an upcoming Humble Bundle 
