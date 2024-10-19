@@ -5,7 +5,7 @@ date: 2024-10-19 15:30:00
 categories: ["Dev","Python","bot","Discord"]
 ---
 
-# 🚀 FamilyBot: The Code Release
+## 🚀 FamilyBot: The Code Release
 
 After months, I'm thrilled to announce that FamilyBot is finally released.
 
