@@ -1,10 +1,6 @@
 name: Chachigo
 dp: https://avatars.githubusercontent.com/u/8048820?s=400&u=662b41b856002a4a9edd24607cec300ddc841310&v=4
-description: "
-  <p>
-    Hobby Developer Since 1996
-  </p>
-"
+description: "<p>Hobby Developer Since 1996</p>"
 email: contact@chachigo.fr
 contact:
   # - title: linkedin
@@ -13,7 +9,7 @@ contact:
     url: https://github.com/Chachigo
   - title: twitter
     url: https://x.com/ChaChiigo
-  # - title: dev
-  #   url: https://dev.to/sharadcodes
+  - title: bluesky
+    url: https://bsky.app/profile/chachigo.bsky.social
   - title: email
     url: mailto:contact@chachigo.fr
