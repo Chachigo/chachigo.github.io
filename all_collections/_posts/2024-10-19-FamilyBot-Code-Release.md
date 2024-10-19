@@ -1,7 +1,7 @@
 ---
 layout: post
 title: FamilyBot Code Release
-date: 2024-10-19 15:30:00
+date: 2024-10-19 15:00:00
 categories: ["Dev","Python","Bot","Discord"]
 ---
 
