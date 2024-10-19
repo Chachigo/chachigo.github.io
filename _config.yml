@@ -6,7 +6,7 @@ author:
   name: Chachigo
   email: contact@chachigo.fr
 
-baseurl: "chachigo.fr"
+baseurl: "https://chachigo.fr"
 url: "https://chachigo.fr"
 
 plugins:
