@@ -6,8 +6,8 @@ author:
   name: Chachigo
   email: contact@chachigo.fr
 
-baseurl: "chachigo.github.io "
-url: "https://chachigo.github.io"
+baseurl: "chachigo.fr"
+url: "https://chachigo.fr"
 
 plugins:
   - jemoji
