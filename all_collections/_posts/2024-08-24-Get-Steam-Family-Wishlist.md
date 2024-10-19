@@ -2,7 +2,7 @@
 layout: post
 title: Get Steam Family Wishlist
 date: 2024-08-24 21:30:00
-categories: ["Dev","Python","Steam","Discord"]
+categories: ["Dev","Python","Steam","Discord","Bot"]
 ---
 
 ## 🎯 Goal

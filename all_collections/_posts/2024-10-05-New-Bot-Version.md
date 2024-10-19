@@ -2,7 +2,7 @@
 layout: post
 title: New Bot Version
 date: 2024-10-05 13:00:00
-categories: ["Dev","Python","bot","Discord"]
+categories: ["Dev","Python","Bot","Discord","Steam"]
 ---
 
 ## 💡Introduction
