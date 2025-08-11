@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Parametric Cardboard Bin
-date: 2025-06-25 15:00:00
+date: 2027-06-25 15:00:00
 categories: ["3D","DIY","FreeCad","Laser"]
 ---
 
