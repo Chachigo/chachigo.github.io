@@ -32,7 +32,11 @@ jobs:
         with:
           ruby-version: '3.1'
           bundler-cache: true
-          cache-version: 0
+          cache-version: 1
+      - name: Update Gemfile.lock
+        run: |
+          bundle config unset deployment
+          bundle install
       - name: Setup Pages
         id: pages
         uses: actions/configure-pages@v5
